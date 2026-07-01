@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <h1> Formulários </h1>
+
+    <!--
+        <form> -> cria a tabela
+
+        <label> -> é a descrição do campo que será preenchido pelo usuário
+            usamos o atributo for="" para indicar o input que ele estará relacionado
+
+        <input> -> é a TAG que cria o campo para o usuário digitar algo;
+            usamos o atributo type="" para indicar o tipo de campo que queremos;
+            id="" para definir o identificador do campo
+            name="" nome para identificar o nome do campo
+            placeholder ="" - usamos para dar uma dica ao usuário sobre o que preencher no campo
+    -->
+
+    <form>
+        <label for="pnome">Primeiro nome</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Digite seu primeiro nome" required> <br><br>
+
+        <label for="unome">Último nome</label>
+        <input type="text" id="unome" name="unome" placeholder="Digite seu último nome"required>
+
+            <!--Criando um botão para o formulátio
+                uso type="" para informar que quero um botão
+                value="" para informar uma descrição
+            -->
+    </form> <br>
+    <hr>
+
+<!----------------------------------------------------------->
+
+    <form></form>
+        <h2>Trabalhando com outros tipos de input</h2> 
+
+        <label> 
+            <strong> Em qual nível você está na programação?</strong>
+        </label><br><br>
+
+        <!-- ao indicar a um input radio o atributo checked, estou informando a opção que já virá selecionada -->
+
+        <label>
+            <input type="radio" name="nível" value="iniciante" checked> Não tenho conhecimentos profundos.
+        </label><br><br>
+
+        <label>
+            <input type="radio" name="nível" value="intermediário"> Eu tenho alguns conhecimentos.
+        </label><br><br>
+
+        <label>
+            <input type="radio" name="nível" value="avancado"> Eu tenho conhecimentos profundos.
+        </label><br><br>
+    </form>
+    <hr>
+
+<!----------------------------------------------------------->
+
+    <h3> Tipo Select - selecionar itens</h3>
+
+    <form>
+
+        <label for="escolaridade">
+            <strong>Sua escolaridade</strong>
+        </label> <br><br>
+
+        <!-- no OPTION defino os seguintes atributos
+            selected -> o campo virá selecionado
+            disabled -> não permite o usuário selecionar esse campo
+            value="" -> se alguém selecionar ele, não receberá valor nenhum
+        -->
+
+        <select id="escolaridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Educação básica</option>
+            <option>Ensino Médio</option>
+            <option>Ensino Superior</option>
+        </select><br><br>
+
+    </form>
+    <hr>
+
+<!----------------------------------------------------------->
+
+    <h3> Tipo Checkbox - sleciona várias opções </h3>
+
+    <form>
+        <label>
+            <strong> Selecione as tecnologias que você conhece</strong>
+        </label><br><br>
+
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"> 
+        <label for="tecnologia1"> HTML </label>
+
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS"> 
+        <label for="tecnologia2"> CSS </label>
+
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript"> 
+        <label for="tecnologia2"> JavaScript </label>
+    </form><br>
+    <hr>
+
+<!----------------------------------------------------------->
+
+    <h3>E-mails</h3>
+    
+    <!-- Ao usarmos o tipo e-mail, esse campo não permite a entrada ede qualquer texto, necessita obrigatoriamente de um @-->
+    <label>Seu e-mail</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+
+    <hr>
+
+    <h3>Date</h3>
+
+    <!--Aqui estamos usando data e hora de forma selecionável e não digitável-->
+    
+    <label for="nascimento">Data Nascimento com Hora</label><br><br>
+    <input type="datetime-local" name="nascimento" id="nascimento"><br><br>
+    
+    <!--Aqui estamos usando data de forma selecionável e não digitável-->
+    <label for="data">Data Nascimento com Hora</label><br><br>
+    <input type="date" name="data" id="data"><br><br>
+
+    <!--Aqui estamos usando data que pode ser digitada, entrada de texto-->
+    <label for="dataText">Data Nascimento com Hora</label><br><br>
+    <input type="datetime" name="dataText" id="dataText"><br><br>
+    
+    <input type="submit" value="Cadastrar"> <br>
+
+</body>
+</html>

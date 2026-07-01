@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    
+    <h3> TAG Detail e Summary</h3>
+
+    <details open>
+        <summary>Motor 1.0</summary> <!-- É uma lista que pode ser recolhida, ela tem um triângulo-->
+        <p>O carro possuí um motor super forte e rápido</p>
+    </details>
+
+    <details>
+        <summary> Conforto </summary> <!-- É uma lista que pode ser recolhida, ela tem um triângulo-->
+        <p>Muito confortável</p>
+    </details>
+
+    <details>
+        <summary> Preço </summary> <!-- É uma lista que pode ser recolhida, ela tem um triângulo-->
+        <p> R$20.000 </p>
+    </details><br>
+
+    <hr> <br>
+
+    <h3>Datalist</h3>
+
+    <form>
+        <input list="carros" name="carro" placeholder="Digite o nome de um carro">
+        <datalist id="carros">
+            <option value="Gol 1.0"></option>
+            <option value="Onix 1.0"></option>
+            <option value="HB20 1.0"></option>
+            <option value="Up 1.0"></option>
+        </datalist>
+    </form> <br>
+
+</body>
+</html>
